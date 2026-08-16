@@ -1,0 +1,15 @@
+{
+  "exam_title": "2026年第三季度悦学业务部季度考（高斯导引专项）",
+  "target_exam_date": "2026-09-18",
+  "total_grades": 4,
+  "total_chapters": 15,
+  "total_questions": 362,
+  "modules": {
+    "数字谜": 22,
+    "应用题": 92,
+    "组合数学": 22,
+    "几何": 74,
+    "计数": 78,
+    "数论": 74
+  }
+}
