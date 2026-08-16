@@ -1,0 +1,9 @@
+{
+  "name": "q3-gaosi-desktop",
+  "version": "1.0.0",
+  "description": "2026 Q3 季度考智能备考与高思奥数刷题系统",
+  "author": "卓越教育",
+  "license": "UNLICENSED",
+  "private": true,
+  "main": "main.cjs"
+}

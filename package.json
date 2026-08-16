@@ -1,0 +1,127 @@
+{
+  "name": "strj",
+  "private": true,
+  "version": "1.0.0",
+  "description": "2026 Q3 季度考智能备考与高思奥数刷题系统",
+  "author": "卓越教育",
+  "type": "module",
+  "main": "electron/main.cjs",
+  "scripts": {
+    "dev": "vite",
+    "prebuild": "node scripts/validate-public-assets.mjs",
+    "build": "tsc -b && vite build",
+    "build:public": "node scripts/validate-public-assets.mjs && tsc -b && vite build --mode public && node scripts/prune-mobile-dist.mjs && node scripts/verify-public-build.mjs",
+    "lint": "oxlint",
+    "test": "vitest run",
+    "preview": "vite preview",
+    "desktop": "npm run build:desktop:web && electron electron/main.cjs",
+    "build:desktop:web": "tsc -b && vite build --mode desktop && node scripts/prune-mobile-dist.mjs",
+    "build:desktop:internal": "node scripts/validate-public-assets.mjs && tsc -b && vite build --mode desktop && node scripts/prune-mobile-dist.mjs && node scripts/verify-internal-build.mjs",
+    "build:desktop:public": "node scripts/validate-public-assets.mjs && tsc -b && vite build --mode desktop-public && node scripts/prune-mobile-dist.mjs && node scripts/verify-public-build.mjs",
+    "desktop:dist": "npm run build:desktop:web && electron-builder --win nsis portable --config.electronDist=node_modules/electron/dist",
+    "desktop:dist:public": "npm run build:desktop:public && electron-builder --win nsis portable --config.directories.output=release-public-desktop --config.electronDist=node_modules/electron/dist",
+    "desktop:dist:internal": "npm run build:desktop:internal && electron-builder --win nsis portable --config.directories.output=release-internal-desktop --config.electronDist=node_modules/electron/dist",
+    "desktop:dist:mac:internal": "npm run build:desktop:internal && node scripts/build-mac-portable.mjs",
+    "release:assemble": "node scripts/assemble-release-materials.mjs",
+    "release:audit": "node scripts/verify-release-materials.mjs",
+    "release:audit-public": "node scripts/verify-public-history.mjs",
+    "release:internal": "npm run desktop:dist:internal && npm run desktop:dist:mac:internal && npm run cap:apk:internal && npm run build:desktop:internal && npm run release:assemble && npm run release:audit",
+    "cap:build": "npm run build && node scripts/prune-mobile-dist.mjs && npx cap sync android",
+    "cap:build:public": "npm run build:public && npx cap sync android",
+    "cap:build:internal": "npm run build && node scripts/prune-mobile-dist.mjs && node scripts/verify-internal-build.mjs && npx cap sync android",
+    "cap:apk": "npm run cap:build && node scripts/build-android-apk.mjs",
+    "cap:apk:public": "npm run cap:build:public && node scripts/build-android-apk.mjs",
+    "cap:apk:internal": "npm run cap:build:internal && node scripts/build-android-apk.mjs",
+    "cap:install": "npm run cap:apk && node scripts/install-android-apk.mjs",
+    "cap:open": "E:\\as\\bin\\studio64.exe android",
+    "release:verify": "npm test && npm run lint && npm run build"
+  },
+  "devDependencies": {
+    "@capacitor/android": "^8.5.0",
+    "@capacitor/cli": "^8.5.0",
+    "@capacitor/core": "^8.5.0",
+    "@capacitor/filesystem": "^8.1.2",
+    "@capacitor/share": "^8.0.1",
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/canvas-confetti": "^1.9.0",
+    "@types/katex": "^0.16.8",
+    "@types/node": "^24.13.3",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.4",
+    "archiver": "^8.0.0",
+    "canvas-confetti": "^1.9.4",
+    "electron": "^43.4.0",
+    "electron-builder": "^26.15.3",
+    "extract-zip": "^2.0.1",
+    "html2canvas-pro": "^2.3.8",
+    "jspdf": "^4.2.1",
+    "katex": "^0.18.4",
+    "lucide-react": "^1.31.0",
+    "oxlint": "^1.75.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-markdown": "^10.1.0",
+    "rehype-katex": "^7.0.1",
+    "remark-math": "^6.0.0",
+    "tailwindcss": "^4.3.3",
+    "tar": "^7.5.22",
+    "typescript": "~6.0.2",
+    "vite": "^8.2.0",
+    "vitest": "^4.1.10"
+  },
+  "build": {
+    "appId": "com.gaosi.q3exam.desktop",
+    "productName": "Q3考高斯刷题",
+    "copyright": "Copyright © 2026 卓越教育",
+    "directories": {
+      "app": "electron",
+      "output": "release-desktop"
+    },
+    "files": [
+      "main.cjs",
+      "package.json"
+    ],
+    "extraResources": [
+      {
+        "from": "dist",
+        "to": "app-dist",
+        "filter": [
+          "**/*"
+        ]
+      }
+    ],
+    "asar": true,
+    "compression": "maximum",
+    "win": {
+      "icon": "build/icon.ico",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    },
+    "nsis": {
+      "artifactName": "Q3考高斯刷题_${version}_Windows安装版_${arch}.${ext}",
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Q3考高斯刷题",
+      "uninstallDisplayName": "Q3考高斯刷题",
+      "deleteAppDataOnUninstall": false
+    },
+    "portable": {
+      "artifactName": "Q3考高斯刷题_${version}_Windows免安装版_${arch}.${ext}"
+    }
+  }
+}

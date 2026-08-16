@@ -1,0 +1,51 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+release-desktop*/
+release-public-desktop/
+release-public-macos/
+release-internal-desktop/
+release-internal-macos/
+build/icon.png
+output/release/
+output/pdf/
+*.local
+tmp/
+
+# Local/generated application packages
+*.apk
+*.aab
+
+# Presentation render/inspection scratch (keep the final .pptx files)
+output/pptx/*.inspect.ndjson
+output/pptx/项目功能介绍/
+output/pptx/项目迭代过程介绍/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Environment files may contain credentials
+.env
+.env.*
+!.env.example
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

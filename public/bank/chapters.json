@@ -1,0 +1,377 @@
+[
+  {
+    "id": "三年级_11",
+    "grade": "三年级",
+    "grade_num": 3,
+    "chapter_num": 11,
+    "title": "第11讲盈亏问题一",
+    "module": "应用题",
+    "sub_module": "第11讲盈亏问题一",
+    "difficulty": 3,
+    "total_questions": 32,
+    "sections": [
+      {
+        "name": "兴趣篇",
+        "count": 10
+      },
+      {
+        "name": "拓展篇",
+        "count": 14
+      },
+      {
+        "name": "超越篇",
+        "count": 8
+      }
+    ]
+  },
+  {
+    "id": "三年级_13",
+    "grade": "三年级",
+    "grade_num": 3,
+    "chapter_num": 13,
+    "title": "第13讲四则运算二",
+    "module": "计算",
+    "sub_module": "第13讲四则运算二",
+    "difficulty": 3,
+    "total_questions": 32,
+    "sections": [
+      {
+        "name": "兴趣篇",
+        "count": 10
+      },
+      {
+        "name": "拓展篇",
+        "count": 14
+      },
+      {
+        "name": "超越篇",
+        "count": 8
+      }
+    ]
+  },
+  {
+    "id": "三年级_18",
+    "grade": "三年级",
+    "grade_num": 3,
+    "chapter_num": 18,
+    "title": "第18讲",
+    "module": "计数",
+    "sub_module": "第18讲",
+    "difficulty": 3,
+    "total_questions": 32,
+    "sections": [
+      {
+        "name": "兴趣篇",
+        "count": 10
+      },
+      {
+        "name": "拓展篇",
+        "count": 14
+      },
+      {
+        "name": "超越篇",
+        "count": 8
+      }
+    ]
+  },
+  {
+    "id": "三年级_20",
+    "grade": "三年级",
+    "grade_num": 3,
+    "chapter_num": 20,
+    "title": "第20讲算符与数字",
+    "module": "数字谜",
+    "sub_module": "第20讲算符与数字",
+    "difficulty": 3,
+    "total_questions": 32,
+    "sections": [
+      {
+        "name": "兴趣篇",
+        "count": 10
+      },
+      {
+        "name": "拓展篇",
+        "count": 14
+      },
+      {
+        "name": "超越篇",
+        "count": 8
+      }
+    ]
+  },
+  {
+    "id": "四年级_2",
+    "grade": "四年级",
+    "grade_num": 4,
+    "chapter_num": 2,
+    "title": "第2讲数阵图初步",
+    "module": "数字谜",
+    "sub_module": "第2讲数阵图初步",
+    "difficulty": 3,
+    "total_questions": 32,
+    "sections": [
+      {
+        "name": "兴趣篇",
+        "count": 10
+      },
+      {
+        "name": "拓展篇",
+        "count": 14
+      },
+      {
+        "name": "超越篇",
+        "count": 8
+      }
+    ]
+  },
+  {
+    "id": "四年级_20",
+    "grade": "四年级",
+    "grade_num": 4,
+    "chapter_num": 20,
+    "title": "第20讲幻方与数阵图扩展",
+    "module": "数字谜",
+    "sub_module": "第20讲幻方与数阵图扩展",
+    "difficulty": 3,
+    "total_questions": 32,
+    "sections": [
+      {
+        "name": "兴趣篇",
+        "count": 10
+      },
+      {
+        "name": "拓展篇",
+        "count": 14
+      },
+      {
+        "name": "超越篇",
+        "count": 8
+      }
+    ]
+  },
+  {
+    "id": "五年级_12",
+    "grade": "五年级",
+    "grade_num": 5,
+    "chapter_num": 12,
+    "title": "第12讲应用题拓展",
+    "module": "应用题",
+    "sub_module": "第12讲应用题拓展",
+    "difficulty": 3,
+    "total_questions": 32,
+    "sections": [
+      {
+        "name": "兴趣篇",
+        "count": 10
+      },
+      {
+        "name": "拓展篇",
+        "count": 14
+      },
+      {
+        "name": "超越篇",
+        "count": 8
+      }
+    ]
+  },
+  {
+    "id": "五年级_15",
+    "grade": "五年级",
+    "grade_num": 5,
+    "chapter_num": 15,
+    "title": "第15讲圆与扇形",
+    "module": "几何",
+    "sub_module": "第15讲圆与扇形",
+    "difficulty": 3,
+    "total_questions": 32,
+    "sections": [
+      {
+        "name": "兴趣篇",
+        "count": 10
+      },
+      {
+        "name": "拓展篇",
+        "count": 14
+      },
+      {
+        "name": "超越篇",
+        "count": 8
+      }
+    ]
+  },
+  {
+    "id": "五年级_19",
+    "grade": "五年级",
+    "grade_num": 5,
+    "chapter_num": 19,
+    "title": "第19讲直线形计算三",
+    "module": "几何",
+    "sub_module": "第19讲直线形计算三",
+    "difficulty": 3,
+    "total_questions": 32,
+    "sections": [
+      {
+        "name": "兴趣篇",
+        "count": 10
+      },
+      {
+        "name": "拓展篇",
+        "count": 14
+      },
+      {
+        "name": "超越篇",
+        "count": 8
+      }
+    ]
+  },
+  {
+    "id": "五年级_21",
+    "grade": "五年级",
+    "grade_num": 5,
+    "chapter_num": 21,
+    "title": "第21讲数字问题",
+    "module": "数字谜",
+    "sub_module": "第21讲数字问题",
+    "difficulty": 3,
+    "total_questions": 32,
+    "sections": [
+      {
+        "name": "兴趣篇",
+        "count": 10
+      },
+      {
+        "name": "拓展篇",
+        "count": 14
+      },
+      {
+        "name": "超越篇",
+        "count": 8
+      }
+    ]
+  },
+  {
+    "id": "五年级_22",
+    "grade": "五年级",
+    "grade_num": 5,
+    "chapter_num": 22,
+    "title": "第22讲计数综合二",
+    "module": "计数",
+    "sub_module": "第22讲计数综合二",
+    "difficulty": 3,
+    "total_questions": 31,
+    "sections": [
+      {
+        "name": "兴趣篇",
+        "count": 10
+      },
+      {
+        "name": "拓展篇",
+        "count": 13
+      },
+      {
+        "name": "超越篇",
+        "count": 8
+      }
+    ]
+  },
+  {
+    "id": "五年级_24",
+    "grade": "五年级",
+    "grade_num": 5,
+    "chapter_num": 24,
+    "title": "第24讲抽屉原理二",
+    "module": "组合数学",
+    "sub_module": "第24讲抽屉原理二",
+    "difficulty": 3,
+    "total_questions": 32,
+    "sections": [
+      {
+        "name": "兴趣篇",
+        "count": 10
+      },
+      {
+        "name": "拓展篇",
+        "count": 14
+      },
+      {
+        "name": "超越篇",
+        "count": 8
+      }
+    ]
+  },
+  {
+    "id": "六年级_14",
+    "grade": "六年级",
+    "grade_num": 6,
+    "chapter_num": 14,
+    "title": "第14讲行程问题六",
+    "module": "应用题",
+    "sub_module": "第14讲行程问题六",
+    "difficulty": 3,
+    "total_questions": 32,
+    "sections": [
+      {
+        "name": "兴趣篇",
+        "count": 10
+      },
+      {
+        "name": "拓展篇",
+        "count": 14
+      },
+      {
+        "name": "超越篇",
+        "count": 8
+      }
+    ]
+  },
+  {
+    "id": "六年级_17",
+    "grade": "六年级",
+    "grade_num": 6,
+    "chapter_num": 17,
+    "title": "第17讲应用题综合一",
+    "module": "应用题",
+    "sub_module": "第17讲应用题综合一",
+    "difficulty": 3,
+    "total_questions": 32,
+    "sections": [
+      {
+        "name": "兴趣篇",
+        "count": 10
+      },
+      {
+        "name": "拓展篇",
+        "count": 14
+      },
+      {
+        "name": "超越篇",
+        "count": 8
+      }
+    ]
+  },
+  {
+    "id": "六年级_23",
+    "grade": "六年级",
+    "grade_num": 6,
+    "chapter_num": 23,
+    "title": "第23讲概率初步",
+    "module": "组合数学",
+    "sub_module": "第23讲概率初步",
+    "difficulty": 3,
+    "total_questions": 32,
+    "sections": [
+      {
+        "name": "兴趣篇",
+        "count": 10
+      },
+      {
+        "name": "拓展篇",
+        "count": 14
+      },
+      {
+        "name": "超越篇",
+        "count": 8
+      }
+    ]
+  }
+]

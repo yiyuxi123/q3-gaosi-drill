@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Q3考高斯刷题</string>
+    <string name="title_activity_main">Q3考高斯刷题</string>
+    <string name="package_name">com.gaosi.q3exam</string>
+    <string name="custom_url_scheme">com.gaosi.q3exam</string>
+</resources>
